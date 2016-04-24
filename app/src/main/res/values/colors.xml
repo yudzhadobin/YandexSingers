@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#957ad5</color>
+    <color name="colorPrimaryDark">#7e67b5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="divider_clr">#d6dbdc</color>
+    <color name="banana">#FFCC00</color>
+
+    <array name="progress_colors_light">
+        <item>#FF03A9F4</item>
+        <item>#FFF2AF3A</item>
+    </array>
+</resources>

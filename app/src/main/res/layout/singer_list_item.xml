@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible">
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/singer_image"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"
+            android:transitionName="test"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/singer_name"
+            android:layout_toRightOf="@+id/singer_image"
+            android:layout_toEndOf="@+id/singer_image"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp" />
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            app:typeface="roboto_medium"
+            android:id="@+id/singer_genres"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/singer_name"
+            android:layout_alignLeft="@+id/singer_name"
+            android:layout_alignStart="@+id/singer_name" />
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/singer_albums"
+            android:layout_alignBottom="@+id/singer_image"
+            android:layout_alignLeft="@+id/singer_genres"
+            android:layout_alignStart="@+id/singer_genres" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1sp"
+            android:id="@+id/divider"
+            android:background="@color/divider_clr"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/singer_image"
+            android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
